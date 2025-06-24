@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz de Liderazgo</title>
+    <link rel="stylesheet" href="bonito.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-rocket"></i>
+            <span class="logo-text">SkillUp!</span>
+        </div>
+        <div class="nav-boton">
+            <a href="../index.html" class="btn-volver">Volver al inicio</a>
+        </div>
+    </nav>
+
+    <h1 class="Titulo">Quiz de Entrevista</h1>
+
+    <div class="pregunta activa">
+        <h3>Imagina que estás en un bote con tu equipo en medio de una tormenta. ¿Qué papel tomarías tú y por qué?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Un lider, dirigiendo al equipo para
+            sobrevivir.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Seguiria las ordenes de quien considero apto.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Quedaria en shock ante tal situacion.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Cómo reaccionas cuando un compañero de equipo desacredita una idea tuya en público?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Esperar para hablarlo despues.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Hablar en el momento, aun que termine en una
+            disución.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">No decir nada, aguantarlo.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Qué prefieres: hablar de frente un conflicto incómodo o dejar que se enfríe con el tiempo?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Hablar las cosas siempre ayuda a resolver
+            conflictos.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">A veces hablarlo despues calma las emociones y permite
+            pensar mejor.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">No siempre vale la pena hablar, mejor ignorarlo y
+            seguir.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Cuál es tu “lenguaje” favorito para comunicar desacuerdos?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Humor.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Datos.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Empatía.</button>
+    </div>
+    <div class="pregunta">
+        <h3>Te despiertas y descubres que tienes 10 tareas urgentes. Solo puedes hacer 3 hoy. ¿Cómo decides cuáles son?
+        </h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Las mas urgentes.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">A las que les falte menos para ser
+            completadas.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Las mas largas.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Qué técnicas usas para mantenerte enfocado cuando todo a tu alrededor está en caos?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Mantener la calma y usar técnicas de
+            respiración.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Dejar que todo se enfríe.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Fluir con el caos.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Qué prefieres: ser puntual pero menos detallista, o más completo aunque te retrases?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Prefiero ser puntual, los detalles son menos
+            importantes.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Los detalles son la clave, llegar un poco tarde es
+            mejor.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Prefiero el balance entre detalles y
+            puntualidad.</button>
+    </div>
+    <div class="pregunta">
+        <h3>Si una política de la empresa cambiara de un día para otro y afectara directamente tu trabajo, ¿cómo
+            responderías?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Hablaria con mi jefatura para que lo cambie.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Lo acepto y busco como adaptarme a la nueva
+            política.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Pongo multiples reclamos hasta que vuelvan a la antigua
+            política.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Cómo reaccionas cuando un colega te interrumpe constantemente durante una reunión?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Lo ignoro y espero a que termine, aunque me
+            moleste.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Le interrumpo también para hacerle ver cómo se
+            siente.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Espero mi turno y luego le hablo en privado sobre cómo
+            me hizo sentir.</button>
+    </div>
+    <div class="pregunta">
+        <h3>Te asignan un nuevo proyecto con un equipo que no conoces. ¿Qué haces en la primera reunión?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Propongo una dinámica rápida para romper el hielo y
+            conocerlos.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Observo en silencio para entender cómo se relacionan
+            entre ellos.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Hago una presentación formal sobre mis habilidades y
+            experiencia.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Qué frase refleja mejor tu actitud frente a los cambios inesperados?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">“Los cambios son oportunidades disfrazadas.”</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">“Si algo cambia, es porque algo falló.”</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">“Prefiero evitar cambios, pero los enfrento si no hay
+            opción.”</button>
+    </div>
+    <div class="pregunta">
+        <h3>Un compañero comete un error que te perjudica. ¿Cuál de estas acciones harías primero?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Hablo directamente con él para aclarar lo
+            ocurrido.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Informo al supervisor para que lo gestione.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Escribo un correo formal explicando mi
+            versión.</button>
+    </div>
+    <div class="pregunta">
+        <h3>¿Qué cualidad valoras más en un equipo de trabajo?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Buena comunicación</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Flexibilidad ante los cambios</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Buen sentido del humor</button>
+    </div>
+    <div class="pregunta">
+        <h3>Te piden feedback sobre un compañero con quien no tienes buena relación. ¿Qué haces?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Doy una opinión sincera, enfocándome en hechos y sin
+            emociones.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Prefiero no decir nada para evitar conflictos.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Respondo con mi opinion sincera y con mi experiencia,
+            aun que me deje llevar por las emociones.</button>
+    </div>
+    <div class="pregunta">
+        <h3>Te dan una tarea fuera de tu rol habitual y no sabes cómo hacerla. ¿Cómo reaccionas?</h3>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Acepto el reto y busco aprender lo necesario por mi
+            cuenta.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Pido ayuda de inmediato para no cometer
+            errores.</button>
+        <button class="opcion" onclick="seleccionarOpcion(this)">Comunico que no es parte de mis funciones y sugiero
+            reasignarla.</button>
+    </div>
+
+    <button class="boton" onclick="siguientePregunta()">Siguiente</button>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

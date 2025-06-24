@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dress Code</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <i class="fas fa-rocket"></i>
+            <span class="logo-text">SkillUp!</span>
+        </div>
+        <div class="nav-boton">
+            <a href="../index.html" class="btn-volver">Volver al inicio</a>
+        </div>
+    </nav>
+
+    <h1>DRESS CODE</h1>
+
+    <!-- Instrucciones: Arrastra las prendas al maniquí. -->
+    <p class="instruccion">¡Vestí al Maniquí! Arrastra las prendas al maniquí para vestirlo. Asegúrate de que cada prenda esté en la zona
+        correcta.</p>
+    <div id="maniqui-container">
+        <img src="IMG/maniqui.png" id="maniqui-base" alt="Maniquí">
+        <div id="zona-top" class="dropzone" data-prenda="top_camisa,top_remera"></div>
+        <div id="zona-mid" class="dropzone" data-prenda="mid_pantalon,mid_pijama"></div>
+        <div id="zona-bottom" class="dropzone" data-prenda="bottom_zapato,bottom_zapatilla"></div>
+    </div>
+
+    <!-- Prendas disponibles para arrastrar -->
+    <div id="prendas">
+        <img src="IMG/camisa.png" class="ropa" class="camisa" draggable="true" data-prenda="top_camisa" alt="Camisa">
+        <img src="IMG/remera.png" class="ropa" class="remera" draggable="true" data-prenda="top_remera" alt="Remera">
+        <img src="IMG/pantalon.png" class="ropa" class="pantalon" draggable="true" data-prenda="mid_pantalon"
+            alt="Pantalón">
+        <img src="IMG/pijama.png" class="ropa" class="pijama" draggable="true" data-prenda="mid_pijama" alt="Pijama">
+        <img src="IMG/zapato.png" class="ropa" class="zapato" draggable="true" data-prenda="bottom_zapato" alt="Zapato">
+        <img src="IMG/zapatilla.png" class="ropa" class="zapatilla" draggable="true" data-prenda="bottom_zapatilla"
+            alt="Zapatilla">
+    </div>
+
+    <p id="mensaje"></p>
+    <div id="barra-container">
+        <div id="barra-progreso"></div>
+    </div>
+
+    <button id="reiniciar">🔄 Reiniciar</button>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

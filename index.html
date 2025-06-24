@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SkillUp!🚀</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <span class="logo-text">SkillUp!</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li><a class="nav-link" href="#quizzes">Tests</a></li>
+                <li><a class="nav-link" href="#dress-game">Dress Game</a></li>
+                <li><a class="nav-link" href="#sobre-nosotros">Nosotros</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- seccion inicio -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg-animation"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ Tu futuro comienza aquí</span>
+                </div>
+                <h1 class="hero-title">
+                    Descubre tu
+                    <span class="gradient-text">lado</span>
+                    profesional
+                </h1>
+                <p class="hero-subtitle">
+                    🎯 Tu vocación no se adivina... ¡se descubre!
+                </p>
+                <div class="hero-buttons">
+                    <button class="cta-button primary" onclick="scrollToQuizzes()">
+                        <span>¡Empezar ahora!</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Jóvenes</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfacción</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Tests + interactivo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="app-header">
+                                <div class="app-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <div class="app-content">
+                                <div class="quiz-preview">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Test Vocacional</span>
+                                </div>
+                                <div class="quiz-preview">
+                                    <i class="fas fa-crown"></i>
+                                    <span>Entrevistas</span>
+                                </div>
+                                <div class="quiz-preview">
+                                    <i class="fas fa-tshirt"></i>
+                                    <span>Dress Code</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!--seccion tests-->
+    <section class="quizzes" id="quizzes">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>🧠 Tests </span>
+                </div>
+                <h2>Elige tu test y descubre tu potencial</h2>
+                <p>Aprende más sobre tus intereses, habilidades y cómo usarlas en tu futuro.</p>
+            </div>
+            <div class="quizzes-grid">
+
+                <!-- test 1-->
+                <div class="quiz-card career" data-aos="fade-up">
+                    <div class="quiz-background">
+                        <div class="quiz-pattern"></div>
+                    </div>
+                    <div class="quiz-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="quiz-content">
+                        <h3>🎯 Test Vocacional</h3>
+                        <p class="quiz-description">
+                            ¿Te imaginas en un trabajo que disfrutes? Este test te ayuda a identificar qué áreas
+                            laborales se conectan con tus intereses y fortalezas.
+                        </p>
+                        <div class="quiz-features">
+                            <div class="feature">
+                                <span>🔎 Explora tus intereses profesionales</span>
+                            </div>
+                            <div class="feature">
+                                <span>🚀 Descubre áreas donde podrías destacar</span>
+                            </div>
+                            <div class="feature">
+                                <span>📊 Recibe una orientación basada en tus respuestas</span>
+                            </div>
+                        </div>
+                        <div class="quiz-stats">
+                            <div class="stat">
+                                <span class="number">10</span>
+                                <span class="label">preguntas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">3min</span>
+                                <span class="label">duración</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="quiz-button" onclick="goToCareerQuiz()">
+                        <span>descubrir</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="quiz-glow"></div>
+                </div>
+                <!-- test 2 -->
+                <div class="quiz-card leadership" data-aos="fade-up" data-aos-delay="200">
+                    <div class="quiz-background">
+                        <div class="quiz-pattern"></div>
+                    </div>
+                    <div class="quiz-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="quiz-content">
+                        <h3>👑 Quiz de entrevista</h3>
+                        <p class="quiz-description">
+                            ¿Tienes habilidades para liderar o trabajar en equipo? Este test revela tus fortalezas en
+                            habilidades blandas clave para tu desarrollo personal y profesional.
+                        </p>
+                        <div class="quiz-features">
+                            <div class="feature">
+                                <span>💬 Evalúa tu comunicación y empatía</span>
+                            </div>
+                            <div class="feature">
+                                <span>🌟 Identifica tu perfil como líder o colaborador</span>
+                            </div>
+                            <div class="feature">
+                                <span>💡 Mejora tus competencias socioemocionales</span>
+                            </div>
+                        </div>
+                        <div class="quiz-stats">
+                            <div class="stat">
+                                <span class="number">15</span>
+                                <span class="label">preguntas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="number">6min</span>
+                                <span class="label">duración</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="quiz-button" onclick="goToLeadershipQuiz()">
+                        <span>Descubrir</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <div class="quiz-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- zona interactiva (dress code) -->
+    <section class="dress-game-section" id="dress-game">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge game-badge">
+                    <span>🎮 Juego Interactivo</span>
+                </div>
+                <h2>Dress Code</h2>
+                <p>¡Aprende jugando cómo vestirte según la ocasión!</p>
+            </div>
+            <div class="game-showcase">
+                <div class="game-visual" data-aos="fade-right">
+                    <div class="game-mockup">
+                        <div class="game-screen">
+                            <div class="game-interface">
+                                <div class="game-content">
+                                    <div class="outfit-preview">
+                                        <div class="outfit-item shirt">👔</div>
+                                        <div class="outfit-item pants">👖</div>
+                                        <div class="outfit-item shoes">👞</div>
+                                    </div>
+                                    <div class="game-options">
+                                        <div class="option-btn">Formal</div>
+                                        <div class="option-btn active">Business</div>
+                                        <div class="option-btn">Casual</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-info" data-aos="fade-left">
+                    <div class="game-card">
+                        <div class="game-icon">
+                            <i class="fas fa-tshirt"></i>
+                        </div>
+                        <div class="game-content">
+                            <h3>👔 Dress Code Game</h3>
+                            <p class="game-description">
+                                Aprende sobre los estilos de vestimenta profesional de forma entretenida.
+                                En este juego interactivo, deberás elegir el outfit correcto según el contexto laboral.
+                                ¡Completa y demuestra que sabes cómo presentarte al mundo laboral!
+                            </p>
+                            <div class="game-features">
+                                <div class="feature">
+                                    <i class="fas fa-gamepad"></i>
+                                    <span>Juego interactivo</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Sistema de completado</span>
+                                </div>
+                            </div>
+                            <div class="game-stats">
+                                <div class="stat">
+                                    <span class="number">2</span>
+                                    <span class="label">outfit</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="number">5min</span>
+                                    <span class="label">diversión</span>
+                                </div>
+                            </div>
+                            <button class="game-button" onclick="goToDressGame()">
+                                <span>¡Jugar ahora!</span>
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- seccion sobre nosotros -->
+    <section class="about" id="sobre-nosotros">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="section-badge">
+                        <span>🚀SkillUp!</span>
+                    </div>
+                    <h2>¿Quiénes Somos?</h2>
+                    <p>
+                        Somos un equipo de estudiantes que combinó creatividad, tecnología y vocación para construir una
+                        experiencia única.
+                        Este proyecto nace con el objetivo de ayudar a otros jóvenes como nosotros a descubrir su perfil
+                        profesional de forma interactiva, clara y entretenida.
+                        Juntos diseñamos, programamos y probamos cada sección para que aprender sobre ti mismo también
+                        sea divertido.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Pasión por orientar</h4>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Aprendizaje activo</h4>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Hecho para ti</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="team-illustration">
+                        <div class="team-member member-1">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Vicente</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-2">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Sageny</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-3">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Roman</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-4">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Iván</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-5">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Agustín</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-6">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Camila</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                        <div class="team-member member-7">
+                            <div class="avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="member-info">
+                                <span class="name">Nicolas</span>
+                                <span class="role">Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer-->
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <span class="logo-text">
+                            SkillUp!</span>
+                    </div>
+
+                    <p>Descubre tu camino profesional de forma interactiva y entretenida.</p>
+                    <div class="social-links">
+                        <a class="social-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="social-link" href="#">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tests</h3>
+                    <ul>
+                        <li><a href="FormularioVocacional/HTML/FormularioVocacional.html">🎯Quiz Vocacional</a></li>
+                        <li><a href="TestHabilidesBlandas/Preguntas habilidades blandas.html">👑Quiz de entrevista</a>
+                        </li>
+                        <li><a href="DressCode/index.html">👔 Dress Code Game</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Comunidad</h3>
+                    <ul>
+                        <li><a href="#">📱 Plataforma accesible </a></li>
+                        <li><a href="#">💬Participa con tus compañeros</a></li>
+                        <li><a href="#">📧Comparte tus resultados</a></li>
+                        <li><a href="#">🎁Pronto nuevos desafíos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> SkillUp@gmail.com</p>
+                        <p><i class="fab fa-whatsapp"></i> +123-456-789</p>
+                        <p><i class="fas fa-map-marker-alt"></i> En la nube ☁️</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SkillUp!🚀</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
